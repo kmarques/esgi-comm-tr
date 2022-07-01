@@ -1,0 +1,9 @@
+GET http://localhost:3000/subscribe
+
+###
+POST http://localhost:3000/messages
+Content-Type: application/json
+
+{
+    "title": "New Notification"
+}

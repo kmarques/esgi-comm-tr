@@ -1,11 +1,11 @@
 {
-  "name": "polling",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/nodemon server.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
