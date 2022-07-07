@@ -1,8 +1,8 @@
 import Game from "./core/Game.js";
-import keyboardHandler from "./core/keyboardHandler.js";
+import keyboardHandler from "./core/handlers/keyboardHandler.js";
 import Player from "./core/Player.js";
-import updateMoveHandler from "./core/updateMoveHandler.js";
-import websocketHandler from "./core/websocketHandler.js";
+import updateMoveHandler from "./core/handlers/updateMoveHandler.js";
+import websocketHandler from "./core/handlers/websocketHandler.js";
 
 document.getElementById("formuser").addEventListener("submit", (event) => {
   event.preventDefault();

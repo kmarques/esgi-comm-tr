@@ -1,4 +1,4 @@
-export default function (ws) {
+export default function updateMoveHandler(ws) {
   return function (player) {
     ws.send(
       JSON.stringify({

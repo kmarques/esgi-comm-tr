@@ -1,5 +1,5 @@
-export default (websocket) =>
-  function keyboardHandler(player) {
+export default function websocketHandler(websocket) {
+  return function keyboardHandler(player) {
     websocket.onmessage = function (event) {
       const { type, player: wplayer } = JSON.parse(event.data);
       if (type === "move") {
@@ -10,3 +10,4 @@ export default (websocket) =>
       }
     };
   };
+}

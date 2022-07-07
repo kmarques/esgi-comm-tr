@@ -1,4 +1,4 @@
-export default function (player) {
+export default function keyboardHandler(player) {
   const handleKeyDown = (event) => {
     if (event.key === "ArrowLeft") {
       player.direction = "left";
