@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js" type="module" defer></script>
+  </head>
+  <body>
+    <form id="formuser">
+      <label for="username">Username</label>
+      <input name="username" id="username" />
+      <label for="color">Color</label>
+      <input name="color" id="color" />
+      <input type="submit" value="Send" />
+    </form>
+    <div id="game" style="display: none">
+      <div style="display: flex">
+        <canvas
+          id="board"
+          height="400"
+          width="600"
+          style="background-color: #dedede"
+        ></canvas>
+        <div id="videos" style="display: flex; flex-direction: column"></div>
+      </div>
+    </div>
+  </body>
+</html>
