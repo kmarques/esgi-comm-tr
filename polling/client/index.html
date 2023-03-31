@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <h1>Messages</h1>
+    <select id="selectedRoom">
+      <option value="room1" selected>Room 1</option>
+      <option value="room2">Room 2</option>
+      <option value="room3">Room 3</option>
+    </select>
+    <div id="badgeContainer">
+      <div data-room="room1">
+        Room 1
+        <div data-rel="badge-count"></div>
+      </div>
+      <div data-room="room2">
+        Room 2
+        <div data-rel="badge-count"></div>
+      </div>
+      <div data-room="room3">
+        Room 3
+        <div data-rel="badge-count"></div>
+      </div>
+    </div>
+    <ul id="messages"></ul>
+    <form id="addMessage">
+      <input type="text" name="message" placeholder="message..." />
+      <input type="text" name="user" placeholder="user..." />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
