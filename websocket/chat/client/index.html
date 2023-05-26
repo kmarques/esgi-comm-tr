@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <form id="formUser">
+      <input type="text" name="user" id="user" placeholder="User" />
+      <input type="submit" value="Connect" />
+    </form>
+    <div id="chat" style="display: none">
+      <select id="rooms">
+        <option value="1">Room 1</option>
+        <option value="2">Room 2</option>
+      </select>
+      <div
+        id="messages"
+        style="display: flex; width: 100%; flex-direction: column"
+      ></div>
+      <form id="formMessage">
+        <input type="text" name="message" id="message" placeholder="Message" />
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>
