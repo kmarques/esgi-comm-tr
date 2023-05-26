@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <form id="login">
+      <input type="text" name="username" />
+      <button id="login">Login</button>
+    </form>
+    <div id="logged-in" style="display: none">
+      <h1 id="username"></h1>
+      <div style="display: flex">
+        <div id="board" style="background-color: aqua; flex: 1"></div>
+        <div style="background-color: pink; flex: 1">
+          <div id="messages"></div>
+          <form id="form-message">
+            <input type="text" name="message" />
+            <button id="send">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
